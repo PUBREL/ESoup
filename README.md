@@ -6,8 +6,8 @@ A Wrapper around NCBI's Entrez Utilities
 ## About
 
 [NCBI](https://www.ncbi.nlm.nih.gov/) offers various ways with which you can access resources in its databases. 
-One of the ways is the Entrez utilities ([E-utils]([https://www.ncbi.nlm.nih.gov/books/NBK25501/])) which 
-allow you to access the databases programmatically. This project aims at creating wrappers around the E-utils i.e 
+One way is the Entrez utilities ([E-utils]([https://www.ncbi.nlm.nih.gov/books/NBK25501/])) which 
+allows you to access the databases programmatically. This project aims at creating wrappers around the E-utils i.e 
 - [ESearch](https://www.ncbi.nlm.nih.gov/books/n/helpeutils/chapter4/#chapter4.ESearch)
 - [EInfo](https://www.ncbi.nlm.nih.gov/books/NBK25499/#chapter4.EInfo)
 - [EPost](https://www.ncbi.nlm.nih.gov/books/n/helpeutils/chapter4/#chapter4.EPost)
