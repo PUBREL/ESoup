@@ -15,14 +15,7 @@ The module contains a class that :
 import logging
 import requests
 import json
-
-
-# set up logging configuration
-logging.basicConfig(
-    level=logging.INFO,
-    # filename='search.log',  # comment out if you want the log to be written to a log file
-    format='%(asctime)s %(levelname)s %(message)s',
-)
+from utils.utils import Utils
 
 
 class Search:
@@ -39,6 +32,15 @@ class Search:
 
         self.url = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi'
 
+        """
+        Instantiate the Utils class to set global logging configurations
+        
+        Pass in a log_file argument in the logger function if you want the logs 
+        to be saved on a file
+        
+        """
+        Utils().logger()
+
     def search(self, term, db="pubmed", api_key=None,
                rettype="uilist", retmode='json',
                retstart=None, retmax=None, sort=None,
@@ -53,6 +55,7 @@ class Search:
 
 
         :param db: Database to search. Value must be a valid Entrez database name
+            See ../utils/utils.py module for available databases
             (default = pubmed).
 
 
